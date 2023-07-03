@@ -13,34 +13,38 @@
     /* Changing image's border-radius */
     border-radius: 50%;
 
-    /*Animation of social media icon follows*/
+}
+
+/* Animation of social media icon, only on hover, follows */
+
+#github-logo:hover {
 
     animation-name: github-logo-animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
+
 }
 
 /* Animation code */
 
 @keyframes github-logo-animation {
     33% {
-        /* animation starts with logo rotating clockwise 180degrees with a purple-colored shadow */
+        /* animation starts with logo rotating clockwise 180 degrees with a light purple-colored shadow */
         transform: rotate(180deg);
         filter: drop-shadow(8px 8px 10px rgb(248, 164, 248));
     }
 
     66% {
-        /* animation ends with logo rotating from 180 to 360 degrees with the purple-colored shadow slowly disappearing*/
+        /* animation continues with logo rotating clockwise from 180 to 360 degrees with the purple-colored shadow slowly darkening*/
         transform: rotate(360deg);
         filter: drop-shadow(8px 8px 10px purple);
     }
 
     100% {
+        /* animation ends with logo rotating anti-clockwise from 360 degrees back to 5 degrees with the purple-colored shadow slowly lightening */
         transform: rotate(5deg);
         filter: drop-shadow(8px 8px 10px rgb(248, 164, 248));
     }
-
-    /**  The animation ends with a quick flip back 360 degrees anti-clockwise which doesn't need to be 
-    coded as the image returns to it's original state **/
+    
 }
