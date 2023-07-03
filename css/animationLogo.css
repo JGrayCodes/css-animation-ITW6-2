@@ -1,5 +1,12 @@
 #github-logo {
+
+    /* setting the size of the image */
     width: 100px;
     height: 100px;
-}
 
+    /* Centering the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
