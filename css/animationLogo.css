@@ -9,4 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+
+    /* Changing image's border-radius */
+    border-radius: 50%;
 }
