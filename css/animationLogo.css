@@ -12,4 +12,35 @@
 
     /* Changing image's border-radius */
     border-radius: 50%;
+
+    /*Animation of social media icon follows*/
+
+    animation-name: github-logo-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Animation code */
+
+@keyframes github-logo-animation {
+    33% {
+        /* animation starts with logo rotating clockwise 180degrees with a purple-colored shadow */
+        transform: rotate(180deg);
+        filter: drop-shadow(8px 8px 10px rgb(248, 164, 248));
+    }
+
+    66% {
+        /* animation ends with logo rotating from 180 to 360 degrees with the purple-colored shadow slowly disappearing*/
+        transform: rotate(360deg);
+        filter: drop-shadow(8px 8px 10px purple);
+    }
+
+    100% {
+        transform: rotate(5deg);
+        filter: drop-shadow(8px 8px 10px rgb(248, 164, 248));
+    }
+
+    /**  The animation ends with a quick flip back 360 degrees anti-clockwise which doesn't need to be 
+    coded as the image returns to it's original state **/
 }
